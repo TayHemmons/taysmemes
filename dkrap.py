@@ -2,6 +2,7 @@
 
 import time
 
+#use for delay between lines
 def d(x):
   time.sleep(x)
 
@@ -27,7 +28,9 @@ def dkVerse():
     d(1)
 
 
-#intro()
-#chorus()
+
+#play the song!
+intro()
+chorus()
 dkVerse()
 chorus()
