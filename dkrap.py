@@ -19,8 +19,12 @@ def intro():
 
 def chorus():
   for line in chorusLyrics:
-    print(line)
-    d(1)
+    if line == "D":
+      print(line)
+      d(.5)
+    else:
+      print(line)
+      d(1)
 
 def dkVerse():
   for line in dkLyrics:
