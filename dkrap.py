@@ -78,8 +78,7 @@ diddyVerse()
 chorus()
 chunkyVerse()
 chorus()
-#im not writing a function for this one line
-print('come on cranky, take it to the fridge')
+print('come on cranky, take it to the fridge') #im not writing a function for this one line
 d(2)
 outroVerse()
 print('oh yeah')
