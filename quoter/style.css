@@ -1,0 +1,25 @@
+.header{
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.footer{
+    font-size: 9px;
+}
+.rfq-container{
+    display: table;
+    width: 15%;
+}
+.rfq{
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    display: table-cell;
+    padding: 10;
+    background-color: gray;
+}
+.quote{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    box-sizing: border-box;
+    width: 249px;
+    border: 3px solid black;
+    font-size: 23px;
+    background-color: lightgray;
+}
