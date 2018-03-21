@@ -24,12 +24,17 @@
                 <button onclick="quoteTest('VVV2','invalid product')">Quote</button>
             </div>
         </div>
-        <div class="quote">
-            <p id="quote">No Active Quote</p>
+        <div class="quote-container">
+            <div class="quote">
+                <p id="qproduct"></p>
+            </div>
+            <div class="quote">
+                <p id="quote"></p>
+            </div>
         </div>
         <div class="action-container">
             <div class="action">
-                <button id="buy">Buy</button>
+                <button onclick="positionAdd()" id="buy">Buy</button>
             </div>
             <div class="action">
                 <button id="sell">Sell</button>
@@ -38,10 +43,20 @@
                 <button onclick="dropQuote()">Drop</button>
             </div>
         </div>
-                </div>
-            <div class="footer">
-                <p>Spicii Quoter</p>
-                <p>Version 0.4</p>
-            </div>
-            </body>
-        </html>
+        <div class="positions">
+            <h2>Positions</h2>
+            <table id="positions">
+                <tr>
+                    <td>Side</td>
+                    <td>Symbol</td>
+                    <td>Price</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+        <div class="footer">
+            <p>Spicii Quoter</p>
+            <p>Version 0.5</p>
+        </div>
+    </body>
+</html>
