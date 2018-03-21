@@ -4,7 +4,6 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
         <style>
-
         </style>
     </head>
     <body>
@@ -14,11 +13,11 @@
         <div class="rfq-container">
             <div class="rfq">
                 <p>ZVZZT</p>
-                <button onclick="quoteTest('ZVZZT','10.00')">Quote</button>
+                <button onclick="quoteTest('ZVZZT',10.00)">Quote</button>
             </div>
             <div class="rfq">
                 <p>FIT</p>
-                <button onclick="quoteTest('FIT','5.00')">Quote</button>
+                <button onclick="quoteTest('FIT',5.25)">Quote</button>
             </div>
             <div class="rfq">
                 <p>VVV2</p>
@@ -26,11 +25,23 @@
             </div>
         </div>
         <div class="quote">
-            <p id="quote"> </p>
+            <p id="quote">No Active Quote</p>
         </div>
-        <div class="footer">
-            <p>Spicii Quoter</p>
-            <p>Version 0.2</p>
+        <div class="action-container">
+            <div class="action">
+                <button id="buy">Buy</button>
+            </div>
+            <div class="action">
+                <button id="sell">Sell</button>
+            </div>
+            <div class="action">
+                <button onclick="dropQuote()">Drop</button>
+            </div>
         </div>
-    </body>
-</html>
+                </div>
+            <div class="footer">
+                <p>Spicii Quoter</p>
+                <p>Version 0.3</p>
+            </div>
+            </body>
+        </html>

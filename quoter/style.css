@@ -20,7 +20,7 @@
     text-align: center;
     box-sizing: border-box;
     width: 15%;
-    border: 3px solid black;
+    border: 2px solid black;
     font-size: 23px;
     background-color: lightgray;
 }
@@ -30,4 +30,15 @@
     font-family: 'Space Mono', monospace;
     border-radius: 20px;
     border: 0
+}
+.action{
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    display: table-cell;
+    padding: 10;
+    background-color: gray;
+}
+.action-container{
+    display: table;
+    width: 10%;
 }
