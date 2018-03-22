@@ -47,4 +47,42 @@ function order(side) {
         cell5.innerHTML = (100 * orderprice).toFixed(2)
     }
 }
+/* this is really bad we're not doing this
+function streamTest(product, baseprice)
+{
+    console.log('rfs: ' + product)
+    if (isNaN(baseprice)){
+        document.getElementById("qproduct").innerHTML = product;
+        document.getElementById("quote").innerHTML = 'ERROR';
+        document.getElementById("buy").disabled = true;
+        document.getElementById("sell").disabled = true;
+    } else {
+        var volatility = parseFloat(Math.random())
+        if (Math.random() >= 0.5){
+            var price2 = baseprice + volatility
+            } else {
+                var price2 = baseprice - volatility
+                }
+        document.getElementById("qproduct").innerHTML = product 
+        document.getElementById("quote").innerHTML = price2.toFixed(2)
+        document.getElementById("buy").disabled = false;
+        document.getElementById("sell").disabled = false;  
+        var t=setInterval(countup,1000);
+        setTimeout("clearInterval(t)", 3000)
+    }
+}
 
+function countup(){
+    var current = (document.getElementById("quote").innerHTML)
+    var volatility = parseFloat(Math.random())
+    if (Math.random() >= 0.5){
+        var newprice = current + volatility + 5
+        } else {
+            var newprice = current - volatility
+            }
+    //i really dont know what im doing
+    var newnewprice = newprice
+    document.getElementById("quote").innerHTML = parseFloat(newprice).toFixed(2)
+    streamTest
+}
+*/

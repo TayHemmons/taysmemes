@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,100,400);
 
 body{
     background: #C9CCD3;
@@ -20,10 +21,11 @@ body{
 .rfq{
     text-align: center;
     font-family: 'Space Mono', monospace;
+    font-family: "Lato", sans-serif;
+    color: white;
     display: table-cell;
     padding: 10;
-    background-color: gray;
-    background: rgba(54, 25, 25, .4)
+    background: rgba(54, 25, 25, .1);
 }
 .quote-container{
     display: table;
@@ -37,12 +39,14 @@ body{
     width: 50%;
     border: 1px solid black;
     font-size: 23px;
-    background-color: lightgray;
+    background: rgba(54, 25, 25, .25);
+    padding-top: 6px;
+    color: white;
 }
 .rfq button{
     background-color: teal;
     color: white;
-    font-family: 'Space Mono', monospace;
+        font-family: "Lato", sans-serif;
     border-radius: 20px;
     border: 0
 }
@@ -51,8 +55,7 @@ body{
     font-family: 'Space Mono', monospace;
     display: table-cell;
     padding: 10;
-    background-color: gray;
-    background: rgba(54, 25, 25, .4)
+    background: rgba(54, 25, 25, .1);
 }
 .action-container{
     display: table;
@@ -61,7 +64,8 @@ body{
 .action button{
     background-color: teal;
     color: white;
-    font-family: 'Space Mono', monospace;
+
+    font-family: "Lato", sans-serif;
     border-radius: 20px;
     border: 0
 }
