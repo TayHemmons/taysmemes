@@ -26,14 +26,44 @@ function dropQuote()
     document.getElementById("quote").innerHTML = ' '
     console.log('dropped quote')
 }
-function positionAdd() {
-    console.log('updating positions')
-    var table = document.getElementById("positions");
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    cell1.innerHTML = 'Buy';
-    cell2.innerHTML = document.getElementById("qproduct").innerHTML;
-    cell3.innerHTML = document.getElementById("quote").innerHTML;
+function buyOrder() {
+    var orderprice = document.getElementById("quote").innerHTML;
+    if (document.getElementById("quote").innerHTML > 0){
+        console.log('updating positions')
+        var table = document.getElementById("positions");
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = 'Buy';
+        cell2.innerHTML = document.getElementById("qproduct").innerHTML;
+        cell3.innerHTML = document.getElementById("quote").innerHTML;
+        dropQuote()
+        //using 100 quantity until we put in a quantity feature
+        cell4.innerHTML = 100
+        cell5.innerHTML = 100 * orderprice
+    }
 }
+function sellOrder() {
+    var orderprice = document.getElementById("quote").innerHTML;
+    if (document.getElementById("quote").innerHTML > 0){
+        console.log('updating positions')
+        var table = document.getElementById("positions");
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = 'Buy';
+        cell2.innerHTML = document.getElementById("qproduct").innerHTML;
+        cell3.innerHTML = document.getElementById("quote").innerHTML;
+        dropQuote()
+        //using 100 quantity until we put in a quantity feature
+        cell4.innerHTML = 100
+        cell5.innerHTML = 100 * orderprice
+    }
+}
+
