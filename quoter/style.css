@@ -46,7 +46,7 @@ body{
 .rfq button{
     background-color: teal;
     color: white;
-        font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
     border-radius: 20px;
     border: 0
 }
@@ -64,13 +64,18 @@ body{
 .action button{
     background-color: teal;
     color: white;
-
     font-family: "Lato", sans-serif;
     border-radius: 20px;
-    border: 0
+    border: 0;
 }
 
-
+.quantity{
+    color: white;
+    text-align: center;
+    background: rgba(54, 25, 25, .1);
+    width: 15%;
+    padding-top: 10px;
+}
 
 
 
