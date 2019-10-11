@@ -11,6 +11,7 @@ def ruleset1(words):
         if word != 'die':
             word = word.replace('ie','ee')
         word = word.replace('ble','bur')
+        word = word.replace('tle','tur')
         if word == 'the': # this one is a full word replace
             word = word.replace('the','da')
         newsentence.append(word)
