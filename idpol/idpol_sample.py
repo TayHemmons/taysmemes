@@ -8,5 +8,4 @@ bible = biblefile.readlines()
 
 biburr = open('generated/biburr.txt','w')
 for line in bible:
-    print(idpol.dumpling(line.lower()))
-    biburr.write(line)
+    biburr.write((idpol.dumpling(line.lower())))
