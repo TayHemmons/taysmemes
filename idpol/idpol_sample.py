@@ -9,3 +9,4 @@ bible = biblefile.readlines()
 biburr = open('generated/biburr.txt','w')
 for line in bible:
     biburr.write((idpol.dumpling(line.lower())))
+    biburr.write('\n')
