@@ -10,7 +10,12 @@ def ruleset1(words):
     for word in words.split(' '):
         if word != 'die':
             word = word.replace('ie','ee')
-        word = word.replace('ble','bur')
+        if not word.startswith('ble'):
+            # ex:
+            # terrible -> terribur
+            # blessing -> bressing
+            word = word.replace('ble','bur')
+        word = word.replace('tle','tur')
         if word == 'the': # this one is a full word replace
             word = word.replace('the','da')
         newsentence.append(word)
